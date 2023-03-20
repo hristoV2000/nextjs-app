@@ -8,6 +8,11 @@ export const StyledHeaderContainer = styled.div`
   justify-content: center;
   align-items: ${({isMainTitle})=> isMainTitle ? 'center': 'left'};
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+        margin-left: 20px;
+        margin-bottom: ${({isMainTitle})=> isMainTitle ? '5rem': '1rem'};
+    }
 `;
 
 export const StyledTitle = styled.h1`

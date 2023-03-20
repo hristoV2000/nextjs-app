@@ -5,7 +5,12 @@ export const StyledMainContainer = styled(SectionContainer)`
   align-items: center;
   flex-direction: column;
 
+  @media screen and (max-width: 768px) {
+        display: grid;
+    }
 `;
+
+
 
 export const ContentContainer = styled.div`
   background-image: ${({ background }) => `url(${background})`};

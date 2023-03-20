@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Service = styled.div`
-  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #F6F6F6;
   border-style: ${({selected}) => selected ? 'solid' : 'none'};
   border-color: ${({selected}) => selected ? '#20B9FE' : 'none'};
@@ -23,4 +23,8 @@ export const ServiceContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+        margin-left: 25px;
+    }
 `;
