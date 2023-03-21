@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeaderContainer = styled.div`
   width: 100%;
-  margin-top: ${({isMainTitle})=> isMainTitle ? '8rem': '0rem'};
+  margin-top: ${({isMainTitle})=> isMainTitle ? '3rem': '0rem'};
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
