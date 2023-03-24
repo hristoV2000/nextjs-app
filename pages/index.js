@@ -9,7 +9,27 @@ const heroProps = {
 
 const mainProps = {
   image: {src: '/img/background.png'},
-  video: {src: '/img/video.png', alt: "", width:658, height: 1050}
+  video: {src: '/img/video.png', alt: "", width:658, height: 1050},
+  cardData: [
+    {
+      icon: "/img/brief.png",
+      title: "Brief",
+      desc: "Complete brief writing or simple guidance on what to include, we've got you covered.",
+      selected: false
+    },
+    {
+      icon: "/img/search.png",
+      title: "Search",
+      desc: "In-depth agency search covering; criteria matching, door knocking and due-dillingence vetting.",
+      selected: false
+    },
+    {
+      icon: "/img/pitch.png",
+      title: "Pitch",
+      desc: "Comprehensive pitch management, including comms, dairy management and pitch hosting.",
+      selected: true
+    },
+  ]
 }
 
 export default function Home() {

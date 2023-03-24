@@ -1,14 +1,24 @@
-import { Video, TitleSection, ServicesSection } from "~/components";
+import { CardsSection } from "~/collections";
+import Image from "next/image";
 
-import { StyledMainContainer, ContentContainer } from "./elements";
+import { StyledMainContainer, StyledHeaderContainer, StyledTitle, StyledSubTitle,ContentContainer, StyledVideoContainer,StyledImage } from "./elements";
 
-export const Main = ({ image, video }) => {
+
+
+export const Main = ({ image, video, cardData, isMainTitle = true }) => {
   return (
     <StyledMainContainer id='main'>
-      <TitleSection title={'Managed agency selection'} subtitle={'Stengthen your onboarding process'}/>
+      <StyledHeaderContainer isMainTitle={isMainTitle}>
+        <StyledTitle>Managed agency selection</StyledTitle>
+          <StyledSubTitle>Stengthen your onboarding process</StyledSubTitle>
+      </StyledHeaderContainer>
       <ContentContainer background={image.src}>
-        <Video video={video} />
-        <ServicesSection/>
+        <StyledVideoContainer>
+          <StyledImage
+            src={video.src}
+          />
+        </StyledVideoContainer>
+        <CardsSection cardData={cardData}/>
       </ContentContainer>
     </StyledMainContainer>
   );
