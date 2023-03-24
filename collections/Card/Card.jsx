@@ -1,6 +1,6 @@
 import { CardContainer, Card, IconContainer } from "./elements";
-import Image from "next/image";
 import { StyledHeaderContainer, StyledTitle, StyledSubTitle } from "../../sections/Main/elements";
+import Image from "next/image";
 
 export const CardsSection = ({cardData,isMainTitle,selected,title,subtitle}) => {
 const renderSections = (cards) =>

@@ -1,9 +1,5 @@
 import { CardsSection } from "~/collections";
-import Image from "next/image";
-
 import { StyledMainContainer, StyledHeaderContainer, StyledTitle, StyledSubTitle,ContentContainer, StyledVideoContainer,StyledImage } from "./elements";
-
-
 
 export const Main = ({ image, video, cardData, isMainTitle = true }) => {
   return (
